@@ -52,13 +52,20 @@ Develop a machine learning model to predict whether a patient has heart disease 
 ## 📁 Project Structure
 
 ```
-Heart-Disease-Prediction/
+Disease-Prediction/
 │
-├── Disease_Prediction.ipynb
-├── Heart_Disease_data.csv
-├── best_model.pkl
+├── data/
+│   └── heart.csv
+│
+├── notebooks/
+│   └── Disease_Prediction.ipynb
+│
+├── models/
+│   └── best_model.pkl
+│
 ├── requirements.txt
-└── README.md
+├── README.md
+└── images
 ```
 
 ## 🚀 Installation
