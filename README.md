@@ -149,21 +149,6 @@ http://localhost:8501
 
 ---
 
-## 📷 Project Screenshots
-
-Add screenshots in the `Images` folder and display them here.
-
-Example:
-
-```markdown
-
-![Feature Importance] Images/Feature_Importance.png
-
-![Confusion Matrix](Images/confusion_matrix.png)
-```
-
----
-
 ## 🔮 Future Improvements
 
 - Improve model accuracy using hyperparameter tuning.
