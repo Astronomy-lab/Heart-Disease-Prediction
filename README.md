@@ -1,95 +1,181 @@
 # ❤️ Heart Disease Prediction Using Machine Learning
 
-## 📌 Overview
+## 📌 Project Overview
+This project predicts the likelihood of heart disease using patient medical data and Machine Learning. It follows a complete ML pipeline including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and prediction. The Random Forest Classifier was selected as the final model based on its performance.
 
-This project predicts the likelihood of heart disease using patient medical data and a Random Forest Classifier. It includes data preprocessing, exploratory data analysis (EDA), model training, evaluation, feature importance analysis, and model saving for future predictions.
+---
 
 ## 🎯 Objective
+To build a machine learning model that accurately predicts whether a patient has heart disease using clinical and medical attributes.
 
-Develop a machine learning model to predict whether a patient has heart disease based on clinical and medical attributes.
+---
 
-## 📂 Dataset
+## 📊 Dataset
+- **Dataset:** UCI Heart Disease Dataset
+- **Source:** UCI Machine Learning Repository
+- **Records:** 303 Patients
+- **Target Variable:** `num` (converted into binary target)
+  - **0** → No Heart Disease
+  - **1** → Heart Disease
 
-* **Dataset:** UCI Heart Disease Dataset
-* **Target Variable:** `num` (converted to binary `target`)
-
-  * `0` → No Heart Disease
-  * `1` → Heart Disease
+---
 
 ## 🛠️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- XGBoost
+- Joblib
+- Streamlit
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Scikit-learn
-* XGBoost
+---
 
+## 📂 Project Structure
 
-## 📊 Project Workflow
+```
+Heart-Disease-Prediction/
+│
+├── app.py
+├── Data/
+│   └── Heart_Disease_data.csv
+│
+├── Images/
+│   ├── age_distribution.png
+│   ├── disease_distribution.png
+│   ├── confusion_matrix.png
+│   └── feature_importance.png
+│
+├── Models/
+│   └── best_model.pkl
+│
+├── notebooks/
+│   └── Disease_Prediction.ipynb
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+---
+
+## ⚙️ Project Workflow
 
 1. Data Collection
 2. Data Cleaning
 3. Exploratory Data Analysis (EDA)
 4. Feature Engineering
-5. Train-Test Split
-6. Feature Scaling
-7. Model Training using Random Forest
-8. Model Evaluation
-9. Feature Importance Analysis
-10. Save Trained Model (`best_model.pkl`)
+5. Missing Value Handling
+6. Train-Test Split
+7. Feature Scaling
+8. Model Training
+9. Model Evaluation
+10. Feature Importance Analysis
+11. Save Best Model
+12. Streamlit Web Application
+
+---
+
+## 🤖 Machine Learning Models
+
+- Logistic Regression
+- Support Vector Machine (SVM)
+- Decision Tree
+- Random Forest ✅ (Selected Model)
+- XGBoost
+
+---
 
 ## 📈 Evaluation Metrics
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* ROC-AUC Score
-* Confusion Matrix
-* Classification Report
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC Score
+- Confusion Matrix
+- Classification Report
 
-## 📁 Project Structure
-
-```
-Disease-Prediction/
-│
-├── data/
-│   └── heart.csv
-│
-├── notebooks/
-│   └── Disease_Prediction.ipynb
-│
-├── models/
-│   └── best_model.pkl
-│
-├── requirements.txt
-├── README.md
-└── images
-```
+---
 
 ## 🚀 Installation
 
+Clone the repository:
+
 ```bash
-git clone <repository-url>
+git clone https://github.com/your-username/Heart-Disease-Prediction.git
+```
+
+Go to the project folder:
+
+```bash
 cd Heart-Disease-Prediction
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-## ▶️ Usage
+---
 
-1. Open `Disease_Prediction.ipynb`.
-2. Run all notebook cells.
-3. Train the Random Forest model.
-4. Save the trained model as `best_model.pkl`.
-5. Use the saved model for predicting new patient data.
+## ▶️ Run the Application
 
-## 📌 Results
+Start the Streamlit app:
 
-The Random Forest Classifier achieved strong performance in predicting heart disease and was selected as the final model based on evaluation metrics.
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser at:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 💻 Features
+
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+- Heart disease prediction
+- Random Forest model
+- Feature importance visualization
+- Interactive Streamlit interface
+- Saved trained model (`best_model.pkl`)
+
+---
+
+## 📷 Project Screenshots
+
+Add screenshots in the `Images` folder and display them here.
+
+Example:
+
+```markdown
+
+![Feature Importance] Images/Feature_Importance.png
+
+![Confusion Matrix](Images/confusion_matrix.png)
+```
+
+---
+
+## 🔮 Future Improvements
+
+- Improve model accuracy using hyperparameter tuning.
+- Deploy the application on Streamlit Community Cloud.
+- Add support for multiple disease prediction.
+- Integrate real-time patient data.
+- Enhance the user interface.
+
+---
 
 ## 👨‍💻 Author
 
-Aditya Vikram Singh
+**Aditya Vikram Singh**
 
 
